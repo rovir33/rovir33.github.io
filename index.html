@@ -12,9 +12,45 @@
 @media(max-width:850px){.navlinks{display:none}.hero-grid{grid-template-columns:minmax(0,1fr) minmax(230px,.75fr);gap:26px;min-height:0}.hero h1{font-size:clamp(2.4rem,5vw,3.7rem)}.portrait-wrap{max-width:320px}.cards,.destinations,.guides{grid-template-columns:1fr 1fr}.split{gap:35px}}
 @media(max-width:620px){.container{width:calc(100% - 34px)}.nav{min-height:65px}.navcta{font-size:.82rem;padding:10px 12px}.hero-grid{grid-template-columns:1fr;padding:48px 0;gap:28px;min-height:0}.hero h1{font-size:clamp(2.5rem,12vw,3.4rem)}.hero-copy{font-size:1rem}.portrait-wrap{width:82%;max-width:340px;justify-self:center;margin:0 auto 8px}.portrait-tag{left:12px}.trust-grid{grid-template-columns:1fr;gap:9px}.trust-item{text-align:left}section{padding:62px 0}.cards,.destinations,.guides,.split,.steps{grid-template-columns:1fr}.principles{grid-template-columns:1fr 1fr}.destination{min-height:250px}.footer-row{flex-direction:column}.mobile-cta{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:20;box-shadow:0 8px 28px #0003}body{padding-bottom:66px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Identidad tropical ejecutiva: arena, palma, océano */
+:root{--navy:#17364a;--deep:#102b38;--ink:#213b43;--muted:#617778;--teal:#168f88;--pale:#f7f4eb;--line:#e4e4d9;--sand:#f2e6d1;--palm:#47755d}
+body{background:#fffdf8;color:var(--ink)}
+.topbar{background:rgba(15,43,54,.97);box-shadow:0 3px 22px #0b26300d}
+.brand span{color:#7cc6b2}
+.navcta,.primary{background:#d5e5a4;color:#193b38}
+.navcta:hover,.primary:hover{background:#e3edbb}
+.hero{position:relative;background:linear-gradient(105deg,rgba(246,239,223,.98) 0%,rgba(246,239,223,.95) 50%,rgba(219,234,221,.92) 100%);color:var(--deep)}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 88% 10%,#8dc8bb50,transparent 44%),radial-gradient(ellipse at 6% 96%,#d9bd8d38,transparent 43%)}
+.hero:after{content:"";position:absolute;right:-110px;top:0;width:360px;height:100%;opacity:.11;pointer-events:none;background:repeating-linear-gradient(145deg,transparent 0 36px,#4a856c 37px 39px,transparent 40px 82px);mask-image:linear-gradient(90deg,transparent,#000)}
+.hero-grid{position:relative;z-index:1;grid-template-columns:minmax(0,1.25fr) minmax(270px,.75fr);gap:35px;min-height:0;padding:42px 0 46px}
+.hero h1{font-size:clamp(2.6rem,4.55vw,4.05rem);line-height:1.11;max-width:710px;margin-bottom:19px;color:#123747}
+.eyebrow{color:#33735d;margin-bottom:18px}.eyebrow:before{background:#33735d}
+.hero-copy{color:#49616a;font-size:1.03rem;max-width:570px;margin-bottom:23px}.hero-copy strong{color:#143c49}
+.hero-note{color:#627a76;margin-top:17px}
+.hero .secondary{color:#1a4b4d;border:1px solid #8ba9a0;background:#ffffff70}
+.portrait-wrap{max-width:345px;width:100%;justify-self:center;background:transparent;border:0;border-radius:0;overflow:visible;box-shadow:none}
+.portrait{width:100%;aspect-ratio:1/1;object-fit:contain;object-position:center;border-radius:0;box-shadow:none;mask-image:linear-gradient(to bottom,#000 0%,#000 83%,transparent 100%)}
+.portrait-tag{display:none}
+.trustbar{background:#e8eee4;border-bottom:1px solid #d6e1d6}.trust-grid{padding:17px 0}.trust-item span{color:#2b816e}
+section{padding:70px 0}.soft{background:#f7f4eb}
+.kicker{color:#43806b}.section-head{margin-bottom:32px}
+h2{color:#173e48}.section-head p{color:#657976}
+.card,.guide{border-color:#e2e7de;border-radius:13px;box-shadow:0 7px 28px #204b3b09;background:#fffefa}
+.card-icon{background:#e5f0e5;color:#42735b}
+.destination{min-height:310px;border-radius:13px;background:#275c60;box-shadow:0 12px 28px #173d3c18}
+.destination:after{background:linear-gradient(0deg,#092d34ed,transparent 82%)}
+.step{border-top-color:#7eac8b}.step:before,.principle b,.guide .label{color:#3b8067}
+.principle{border-color:#e1e6d8;background:#fffefa}
+.contact{background:linear-gradient(115deg,#123b44,#1e615f 70%,#367a6b);position:relative}
+.contact:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.13;background:radial-gradient(circle at 85% 20%,#b5d69c,transparent 36%)}
+.contact .container{position:relative}.contact .kicker{color:#b6dec3}
+footer{background:#102e38}
+@media(max-width:850px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(220px,.7fr);gap:20px;min-height:0}.hero h1{font-size:clamp(2.35rem,5vw,3.35rem)}.portrait-wrap{max-width:300px}}
+@media(max-width:620px){.hero-grid{grid-template-columns:1fr;gap:16px;padding:37px 0 34px}.hero h1{font-size:clamp(2.35rem,10.5vw,3.1rem)}.portrait-wrap{max-width:285px;width:75%;justify-self:center}.hero-copy{font-size:1rem}.hero:after{display:none}.trust-grid{gap:8px}.destination{min-height:255px}section{padding:58px 0}}
 </style></head><body>
 <div class="topbar"><div class="container nav"><a class="brand" href="#inicio">ROVIR<span>.</span> REYES</a><nav class="navlinks" aria-label="Navegación"><a href="#enfoque">Mi enfoque</a><a href="#destinos">Destinos</a><a href="#proceso">Cómo te acompaño</a><a href="#sobre-mi">Sobre mí</a></nav><a class="navcta" href="https://wa.me/18298568387?text=Hola%20Rovir%2C%20quiero%20conversar%20sobre%20inversi%C3%B3n%20inmobiliaria" target="_blank" rel="noopener">Hablemos por WhatsApp ↗</a></div></div>
-<header class="hero" id="inicio"><div class="container hero-grid"><div><div class="eyebrow">Inversión inmobiliaria turística · República Dominicana</div><h1>Tu próxima inversión merece una buena decisión.</h1><p class="hero-copy">Soy <strong>Rovir Reyes</strong>. Te acompaño a conocer y evaluar oportunidades inmobiliarias turísticas en República Dominicana, con información clara, criterio y atención cercana.</p><div class="actions"><a class="button primary" href="https://wa.me/18298568387?text=Hola%20Rovir%2C%20quiero%20conocer%20opciones%20de%20inversi%C3%B3n%20inmobiliaria" target="_blank" rel="noopener">Conversemos sobre tu inversión ↗</a><a class="button secondary" href="#enfoque">Conoce mi enfoque</a></div><p class="hero-note">Una conversación clara es un buen primer paso. Sin presión y con información.</p></div><div class="portrait-wrap"><img class="portrait" src="rovir-reyes.jpg" width="1000" height="1000" fetchpriority="high" alt="Rovir Reyes, asesor de inversión inmobiliaria turística"><div class="portrait-tag">Rovir Reyes<small>Asesor de inversión inmobiliaria</small></div></div></div></header>
+<header class="hero" id="inicio"><div class="container hero-grid"><div><div class="eyebrow">Inversión inmobiliaria turística · República Dominicana</div><h1>Tu próxima inversión merece una buena decisión.</h1><p class="hero-copy">Soy <strong>Rovir Reyes</strong>. Te acompaño a conocer y evaluar oportunidades inmobiliarias turísticas en República Dominicana, con información clara, criterio y atención cercana.</p><div class="actions"><a class="button primary" href="https://wa.me/18298568387?text=Hola%20Rovir%2C%20quiero%20conocer%20opciones%20de%20inversi%C3%B3n%20inmobiliaria" target="_blank" rel="noopener">Conversemos sobre tu inversión ↗</a><a class="button secondary" href="#enfoque">Conoce mi enfoque</a></div><p class="hero-note">Una conversación clara es un buen primer paso. Sin presión y con información.</p></div><div class="portrait-wrap"><img class="portrait" src="rovir-reyes.jpg" width="1000" height="1000" fetchpriority="high" alt="Rovir Reyes, asesor de inversión inmobiliaria turística"></div></div></header>
 <div class="trustbar"><div class="container trust-grid"><div class="trust-item"><span>⌖</span>Enfoque en destinos turísticos</div><div class="trust-item"><span>✓</span>Información clara para decidir</div><div class="trust-item"><span>↗</span>Acompañamiento de principio a fin</div></div></div>
 <main>
 <section id="enfoque"><div class="container"><div class="section-head"><div class="kicker">Mi enfoque</div><h2>Más claridad para decidir mejor.</h2><p>Comprar una propiedad es una decisión importante. Mi trabajo es ayudarte a entender la oportunidad completa, más allá de las fotografías y el precio de entrada.</p></div><div class="cards"><article class="card"><div class="card-icon">⌕</div><h3>Evaluación de oportunidades</h3><p>Revisamos ubicación, características del proyecto, perfil de comprador, demanda potencial y horizonte de inversión.</p></article><article class="card"><div class="card-icon">▤</div><h3>Información y documentación</h3><p>Te ayudo a identificar los documentos, condiciones contractuales y datos que conviene conocer antes de avanzar.</p></article><article class="card"><div class="card-icon">◎</div><h3>Acompañamiento cercano</h3><p>Conversamos sobre tus objetivos, aclaramos tus dudas y organizamos los próximos pasos durante el proceso de compra.</p></article></div></div></section>
